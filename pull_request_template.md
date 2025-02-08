@@ -22,5 +22,5 @@ Describe how you tested this change and any special setup configurations in case
 - [ ] Unit tests cover any new functionality or edge cases that the PR was meant to resolve (if applicable) 
 - [ ] The CI checks are passing
 - [ ] I reviewed my own code in the GitHub diff and am sure that each change is intentional
-- [ ] I feel comfortable about this code flying in a rocket
+- [ ] I feel comfortable about this code flying on a balloon
 
