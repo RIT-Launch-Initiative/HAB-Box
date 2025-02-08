@@ -12,3 +12,8 @@ The following are sensors and integrations that the shield and MCU will need and
 - Jumper Switches
 - GPIO pins
 - SD Card
+
+# Output Format
+The output of this software will be a csv file with the following format:
+- Time, Latitude, Longitude, Altitude, Humidity, Temperature, Pressure, Altitude
+Time, lat, long, and alt will be logged from GPS data, humidity and temp will be logged from sensor data, and pressure and altitude will be logged from the barometric altimeter.
