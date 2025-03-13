@@ -1,7 +1,7 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
-enum CardinalDirection
+enum CardinalDirection : char
 {
     North = 'N',
     East = 'E',
