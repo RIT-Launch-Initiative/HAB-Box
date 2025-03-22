@@ -2,7 +2,6 @@
 
 #define SD_FAT_TYPE 3 // fat16, fat32, and exfat
 #define SPI_SPEED SD_SCK_MHZ(50)
-#define ENABLE_DEDICATED_SPI 1
 
 #include <SPI.h>
 #include <SdFat.h>
@@ -32,7 +31,7 @@ void ScanLine(const char* buf, Config& config, int profile) {
 bool LoadConfig() { 
     /// @todo change this to PIN_SPI_CS when Pin header ready
 
-    if (!sd.begin(PIN_PA14, SPI_SPEED)) 
+    if (!sd.begin(2, SPI_SPEED)) 
     {
         Serial.print("SD card initialization failed: ");
         Serial.print(sd.card()->errorCode());
