@@ -11,6 +11,7 @@
 #define GPIO4 A3
 #define GPIO5 A4
 #define TEMPINT A5
+#define CS 2
 
 #define PROG1 13
 #define PROG2 12
@@ -30,7 +31,14 @@
 #define PROG3 A8
 #define PROG4 A9
 
-inline void pinMode(uint32_t pin, uint32_t mode) {
-    pinMode(pin, mode);
+inline void init() {
+    pinMode(PROG1, INPUT_PULLUP);
+    pinMode(PROG2, INPUT_PULLUP);
+    pinMode(PROG3, INPUT_PULLUP);
+    pinMode(PROG4, INPUT_PULLUP);
+
+    pinMode(PWM1, OUTPUT);
+    pinMode(PWM2, OUTPUT);
+    pinMode(PWM3, OUTPUT);
 }
 
