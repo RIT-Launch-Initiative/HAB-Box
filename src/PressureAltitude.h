@@ -3,7 +3,6 @@
 
 #include <Arduino.h>
 #include <Wire.h>
-#include <MS5x.h>
 
 typedef struct {
     double altitude;
