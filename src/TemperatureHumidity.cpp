@@ -1,14 +1,15 @@
 #include "TemperatureHumidity.h"
-    
+
+
 /// @brief Set up the sensor object to begin taking measurements and writing to I2C
-void HDCSetup() {
-    sensor.begin();
-    sensor.reset();
+void HDCSetup(HDC2080 HDCsensor) {
+    HDCsensor.begin();
+    HDCsensor.reset();
 
-    sensor.setMeasurementMode(TEMP_AND_HUMID);
-    sensor.setRate(ONE_HZ);
+    HDCsensor.setMeasurementMode(TEMP_AND_HUMID);
+    HDCsensor.setRate(ONE_HZ);
 
-    sensor.setTempRes(FOURTEEN_BIT);
-    sensor.setHumidRes(FOURTEEN_BIT);
-    sensor.triggerMeasurement();
+    HDCsensor.setTempRes(FOURTEEN_BIT);
+    HDCsensor.setHumidRes(FOURTEEN_BIT);
+    HDCsensor.triggerMeasurement();
 }
