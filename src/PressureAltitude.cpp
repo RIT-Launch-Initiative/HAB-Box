@@ -19,5 +19,5 @@ bool PressureAltitudeRead(PressureAltitudeData_t& data) {
     data.pressure = sens.pressure;
     data.temperature = sens.temperature;
     data.altitude = sens.altitude;
-    return true; // nyi
+    return true;
 }
