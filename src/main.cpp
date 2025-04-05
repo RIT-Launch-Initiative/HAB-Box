@@ -23,4 +23,6 @@ void loop() {
     Serial.print(data.pressure);
     Serial.print(" Temperature: ");
     Serial.print(data.temperature);
+    Serial.print(" Altitude: ");
+    Serial.println(data.altitude);
 }
